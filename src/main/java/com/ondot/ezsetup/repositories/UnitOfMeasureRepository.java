@@ -1,4 +1,4 @@
-package com.ondot.ezsetup.repository;
+package com.ondot.ezsetup.repositories;
 
 import com.ondot.ezsetup.domain.UnitOfMeasure;
 import org.springframework.data.repository.CrudRepository;
@@ -12,4 +12,3 @@ public interface UnitOfMeasureRepository extends CrudRepository<UnitOfMeasure, L
 
     Optional<UnitOfMeasure> findByDescription(String description);
 }
-

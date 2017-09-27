@@ -1,4 +1,4 @@
-package com.ondot.ezsetup.repository;
+package com.ondot.ezsetup.repositories;
 
 import com.ondot.ezsetup.domain.Category;
 import org.springframework.data.repository.CrudRepository;

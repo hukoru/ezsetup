@@ -1,15 +1,9 @@
 package com.ondot.ezsetup.bootstrap;
 
 import com.ondot.ezsetup.domain.*;
-import com.ondot.ezsetup.model.Author;
-import com.ondot.ezsetup.model.Book;
-import com.ondot.ezsetup.model.Publisher;
-import com.ondot.ezsetup.repositories.AuthorRepository;
-import com.ondot.ezsetup.repositories.BookRepository;
-import com.ondot.ezsetup.repositories.PublisherRepository;
-import com.ondot.ezsetup.repository.CategoryRepository;
-import com.ondot.ezsetup.repository.RecipeRepository;
-import com.ondot.ezsetup.repository.UnitOfMeasureRepository;
+import com.ondot.ezsetup.repositories.CategoryRepository;
+import com.ondot.ezsetup.repositories.RecipeRepository;
+import com.ondot.ezsetup.repositories.UnitOfMeasureRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
@@ -219,6 +213,5 @@ public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent>{
         recipes.add(tacosRecipe);
         return recipes;
     }
-
 
 }
