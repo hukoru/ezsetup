@@ -1,5 +1,6 @@
-.gradle
-/build/
+.gradle/
+gradle/
+gradle*
 !gradle/wrapper/gradle-wrapper.jar
 
 ### STS ###
@@ -24,3 +25,7 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+
+### build outpu ###
+/build/
+out/

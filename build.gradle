@@ -28,11 +28,28 @@ repositories {
 }
 
 
+jar {
+	baseName = 'easySetup'
+	version = '1.0.0'
+}
+
+
 dependencies {
-	compile('org.springframework.boot:spring-boot-starter-actuator')
 	compile('org.springframework.boot:spring-boot-starter-data-jpa')
 	compile('org.springframework.boot:spring-boot-starter-thymeleaf')
-	compile('org.springframework.boot:spring-boot-starter-web')
+	// tag::jetty[]
+	compile("org.springframework.boot:spring-boot-starter-web") {
+		exclude module: "spring-boot-starter-tomcat"
+	}
+	compile("org.springframework.boot:spring-boot-starter-jetty")
+	// end::jetty[]
+	compile('org.springframework.boot:spring-boot-starter-actuator')
+	compile('org.projectlombok:lombok')
+	compile('org.webjars:bootstrap:3.3.7-1')
+
+
+	compile("nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect")
+	runtime('org.springframework.boot:spring-boot-devtools')
 	runtime('com.h2database:h2')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
