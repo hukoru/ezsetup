@@ -27,7 +27,6 @@ repositories {
 	maven { url "https://repo.spring.io/milestone" }
 }
 
-
 jar {
 	baseName = 'easySetup'
 	version = '1.0.0'
@@ -48,8 +47,9 @@ dependencies {
 	compile('org.webjars:bootstrap:3.3.7-1')
 
 
-	compile("nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect")
 	runtime('org.springframework.boot:spring-boot-devtools')
 	runtime('com.h2database:h2')
+
+
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
