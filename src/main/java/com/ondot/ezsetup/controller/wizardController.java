@@ -8,11 +8,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Slf4j
 @Controller
-public class IndexController {
-
-    @RequestMapping({"", "/", "/index"})
+public class wizardController {
+    @RequestMapping({"wizard"})
     public String getIndexPage(Model model) {
-
-        return "index";
+        return "wizard";
     }
 }

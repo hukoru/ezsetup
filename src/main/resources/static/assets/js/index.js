@@ -7,6 +7,10 @@
 
     'use strict';
 
+    $('#refrenceModel1Popup').click(function() {
+        $('#modalSlideUp').modal('show')
+    });
+
 
     $('#portlet-linear1').portlet({
         progress: 'circle',
