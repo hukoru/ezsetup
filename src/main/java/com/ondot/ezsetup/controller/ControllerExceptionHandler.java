@@ -18,8 +18,6 @@ public class ControllerExceptionHandler {
     @ExceptionHandler(NumberFormatException.class)
     public ModelAndView handleNumberFormat(Exception exception){
 
-        log.error("Handling Number Format Exception");
-        log.error(exception.getMessage());
 
         ModelAndView modelAndView = new ModelAndView();
 

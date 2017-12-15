@@ -14,11 +14,14 @@ public class StaticResourceConfig extends WebMvcConfigurerAdapter {
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        /*
         registry
                 .addResourceHandler("/**")
                 .addResourceLocations(RESOURCE_LOCATIONS)
-                .setCachePeriod(3600)
+                .setCachePeriod(1)
                 .resourceChain(true)
                 .addResolver(new PathResourceResolver());
+
+                */
     }
 }

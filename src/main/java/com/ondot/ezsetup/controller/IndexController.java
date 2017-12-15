@@ -4,15 +4,19 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
 
 @Slf4j
 @Controller
 public class IndexController {
 
-    @RequestMapping({"", "/", "/index"})
-    public String getIndexPage(Model model) {
+    @RequestMapping(value = {"", "/", "/index"}, method = RequestMethod.GET)
+    public ModelAndView getIndexPage(Model model) {
 
-        return "index";
+        ModelAndView mav = new ModelAndView();
+        mav.setViewName("index");
+        return mav;
     }
 }
