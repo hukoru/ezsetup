@@ -353,50 +353,62 @@
                     <div class="padding-30">
                         <form role="form">
                             <div class="form-group-attached">
-                                <div class="form-group form-group-default required">
-                                    <label>Interface name</label>
-                                    <input type="text" class="form-control" placeholder="type interface name" required>
-                                </div>
-                                <div class="row clearfix">
-                                    <div class="col-sm-6">
-                                        <div class="form-group form-group-default required">
-                                            <label>Interface name</label>
-                                            <input type="text" class="form-control" placeholder="type interface name" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group form-group-default">
-                                            <label>Interface Ip Address</label>
-                                            <input type="text" class="form-control" placeholder="10.0.0.15" required>
-                                        </div>
-                                    </div>
-                                </div>
+                                <H5>Interface 1</H5>
+                                <div class="form-group-attached">
 
-                                <div class="row clearfix">
-                                    <div class="col-sm-6">
-                                        <div class="form-group form-group-default required">
-                                            <label>Component Name</label>
-                                            <input type="text" class="form-control" placeholder="type component name" required>
+                                    <div class="form-group form-group-default input-group">
+                                        <span class="input-group-addon">
+                                                    <select class="cs-select cs-skin-slide cs-transparent" data-init-plugin="cs-select">
+                                                        <option value="CI">fiserver1</option>
+                                                        <option value="GH">isagent1</option>
+                                                        <option value="ET">redis</option>
+                                                        <option value="ET">rebbitt</option>
+                                                    </select>
+                                                </span>
+                                        <label>Interface Name</label>
+                                        <input type="text" class="form-control" placeholder="type hostname" value="eth0:0" required>
+                                    </div>
+                                    <div class="row clearfix">
+                                        <div class="col-sm-6">
+                                            <div class="form-group form-group-default required">
+                                                <label>IP</label>
+                                                <input type="text" class="form-control" placeholder="192.168.128.31" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group form-group-default">
+                                                <label>Port</label>
+                                                <input type="text" class="form-control" placeholder="255.255.255.0" required>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group form-group-default">
-                                            <label>Subnet</label>
-                                            <input type="text" class="form-control" placeholder="255.255.255.0" required>
+                                    <div class="row clearfix">
+                                        <div class="col-sm-6">
+                                            <div class="form-group form-group-default required">
+                                                <label>Gateway</label>
+                                                <input type="text" class="form-control" placeholder="10.0.2.2" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group form-group-default">
+                                                <label>Subnet Mask</label>
+                                                <input type="text" class="form-control" placeholder="255.255.255.0" required>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row clearfix">
-                                    <div class="col-sm-6">
-                                        <div class="form-group form-group-default required">
-                                            <label>Port Number</label>
-                                            <input type="text" class="form-control" placeholder="1521" required>
+
+                                    <div class="row clearfix">
+                                        <div class="col-sm-6">
+                                            <div class="form-group form-group-default required">
+                                                <label>DNS 1</label>
+                                                <input type="text" class="form-control" placeholder="192.168.63.1" required>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group form-group-default">
-                                            <label>Gateway</label>
-                                            <input type="text" class="form-control" placeholder="192.168.126.1" required>
+                                        <div class="col-sm-6">
+                                            <div class="form-group form-group-default">
+                                                <label>DNS 2</label>
+                                                <input type="text" class="form-control" placeholder="192.168.63.2" required>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
