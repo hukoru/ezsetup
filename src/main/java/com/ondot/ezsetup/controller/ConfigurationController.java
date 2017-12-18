@@ -21,7 +21,7 @@ public class ConfigurationController {
         this.configurationService = configurationService;
     }
 
-    @RequestMapping(value = "/configuration/architecture", method = RequestMethod.GET)
+    @RequestMapping(value = "/configuration/architecture", method = { RequestMethod.GET, RequestMethod.POST })
     public ModelAndView getConfigurationArchitecturePage(Model model) {
 
         ModelAndView mav = new ModelAndView();
