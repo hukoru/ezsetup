@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
-
-<head >
+<head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <meta charset="utf-8" />
   <title>EzSetup - OndotSystems.com</title>
@@ -28,10 +27,8 @@
   <link href="/assets/plugins/codrops-dialogFx/dialog.ie.css" rel="stylesheet" type="text/css" media="screen" />
   <![endif]-->
 </head>
-
-<body class="fixed-header ">
-
-<!-- BEGIN SIDEBAR-->
+<body class="fixed-header">
+<!-- BEGIN SIDEBPANEL-->
 <nav class="page-sidebar" data-pages="sidebar">
   <!-- BEGIN SIDEBAR MENU TOP TRAY CONTENT-->
   <div class="sidebar-overlay-slide from-top" id="appMenu">
@@ -97,850 +94,300 @@
   <!-- END SIDEBAR MENU -->
 </nav>
 <!-- END SIDEBAR -->
-
+<!-- END SIDEBPANEL-->
 <!-- START PAGE-CONTAINER -->
 <div class="page-container ">
-
   <!-- START HEADER -->
   <div class="header ">
-    <!-- START MOBILE CONTROLS -->
-    <div class="container-fluid relative">
-      <!-- LEFT SIDE -->
-      <div class="pull-left full-height visible-sm visible-xs">
-        <!-- START ACTION BAR -->
-        <div class="header-inner">
-          <a href="#" class="btn-link toggle-sidebar visible-sm-inline-block visible-xs-inline-block padding-5" data-toggle="sidebar">
-            <span class="icon-set menu-hambuger"></span>
-          </a>
-        </div>
-        <!-- END ACTION BAR -->
+    <!-- START MOBILE SIDEBAR TOGGLE -->
+    <a href="#" class="btn-link toggle-sidebar hidden-lg-up pg pg-menu" data-toggle="sidebar">
+    </a>
+    <!-- END MOBILE SIDEBAR TOGGLE -->
+    <div class="">
+      <div class="brand inline   ">
+        <img src="assets/img/logo.png" alt="logo" data-src="assets/img/logo.png" data-src-retina="assets/img/logo_2x.png" width="78" height="22">
       </div>
-      <div class="pull-center hidden-md hidden-lg">
-        <div class="header-inner">
-          <div class="brand inline">
-            <img src="/assets/img/logo.png" alt="logo" data-src="/assets/img/logo.png" data-src-retina="/assets/img/logo_2x.png" width="78" height="22">
-          </div>
-        </div>
-      </div>
-      <!-- RIGHT SIDE -->
-      <div class="pull-right full-height visible-sm visible-xs">
-        <!-- START ACTION BAR -->
-        <div class="header-inner">
-          <a href="#" class="btn-link visible-sm-inline-block visible-xs-inline-block" data-toggle="quickview" data-toggle-element="#quickview">
-            <span class="icon-set menu-hambuger-plus"></span>
-          </a>
-        </div>
-        <!-- END ACTION BAR -->
-      </div>
-    </div>
-    <!-- END MOBILE CONTROLS -->
-    <div class=" pull-left sm-table hidden-xs hidden-sm">
-      <div class="header-inner">
-        <div class="brand inline">
-          <img src="/assets/img/logo.png" alt="logo" data-src="/assets/img/logo.png" data-src-retina="/assets/img/logo_2x.png" width="78" height="22">
-        </div>
-        <!-- START NOTIFICATION LIST -->
-        <ul class="notification-list no-margin hidden-sm hidden-xs b-grey b-l b-r no-style p-l-30 p-r-20">
-          <li class="p-r-15 inline">
-            <div class="dropdown">
-              <a href="javascript:;" id="notification-center" class="icon-set globe-fill" data-toggle="dropdown">
-                <span class="bubble"></span>
-              </a>
-              <!-- START Notification Dropdown -->
-              <div class="dropdown-menu notification-toggle" role="menu" aria-labelledby="notification-center">
-                <!-- START Notification -->
-                <div class="notification-panel">
+      <!-- START NOTIFICATION LIST -->
+      <ul class="hidden-md-down notification-list no-margin hidden-sm-down b-grey b-l b-r no-style p-l-30 p-r-20">
+        <li class="p-r-10 inline">
+          <div class="dropdown">
+            <a href="javascript:;" id="notification-center" class="header-icon pg pg-world" data-toggle="dropdown">
+              <span class="bubble"></span>
+            </a>
+            <!-- START Notification Dropdown -->
+            <div class="dropdown-menu notification-toggle" role="menu" aria-labelledby="notification-center">
+              <!-- START Notification -->
+              <div class="notification-panel">
+                <!-- START Notification Body-->
+                <div class="notification-body scrollable">
+                  <!-- START Notification Item-->
+                  <div class="notification-item unread clearfix">
+                    <!-- START Notification Item-->
+                    <div class="heading open">
+                      <a href="#" class="text-complete pull-left">
+                        <i class="pg-map fs-16 m-r-10"></i>
+                        <span class="bold">Carrot Design</span>
+                        <span class="fs-12 m-l-10">David Nester</span>
+                      </a>
+                      <div class="pull-right">
+                        <div class="thumbnail-wrapper d16 circular inline m-t-15 m-r-10 toggle-more-details">
+                          <div><i class="fa fa-angle-left"></i>
+                          </div>
+                        </div>
+                        <span class=" time">few sec ago</span>
+                      </div>
+                      <div class="more-details">
+                        <div class="more-details-inner">
+                          <h5 class="semi-bold fs-16">“Apple’s Motivation - Innovation <br>
+                            distinguishes between <br>
+                            A leader and a follower.”</h5>
+                          <p class="small hint-text">
+                            Commented on john Smiths wall.
+                            <br> via pages framework.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- END Notification Item-->
+                    <!-- START Notification Item Right Side-->
+                    <div class="option" data-toggle="tooltip" data-placement="left" title="mark as read">
+                      <a href="#" class="mark"></a>
+                    </div>
+                    <!-- END Notification Item Right Side-->
+                  </div>
                   <!-- START Notification Body-->
-                  <div class="notification-body scrollable">
-                    <!-- START Notification Item-->
-                    <div class="notification-item unread clearfix">
-                      <!-- START Notification Item-->
-                      <div class="heading open">
-                        <a href="#" class="text-complete pull-left">
-                          <i class="pg-map fs-16 m-r-10"></i>
-                          <span class="bold">IT Infra Team</span>
-                          <span class="fs-12 m-l-10">Bhaskar Yarlagadda </span>
-                        </a>
-                        <div class="pull-right">
-                          <div class="thumbnail-wrapper d16 circular inline m-t-15 m-r-10 toggle-more-details">
-                            <div><i class="fa fa-angle-left"></i>
-                            </div>
-                          </div>
-                          <span class=" time">few sec ago</span>
-                        </div>
-                        <div class="more-details">
-                          <div class="more-details-inner">
-                            <h5 class="semi-bold fs-16">“US IT is doing windows server maintenance as per below schedule.”</h5>
-                            <p class="small hint-text">
-                              When: Dec 1st Friday between 7.00 PM to 8.00 PM PST
-                              <br> What: Security patch updates on windows production servers
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- END Notification Item-->
-                      <!-- START Notification Item Right Side-->
-                      <div class="option" data-toggle="tooltip" data-placement="left" title="mark as read">
-                        <a href="#" class="mark"></a>
-                      </div>
-                      <!-- END Notification Item Right Side-->
+                  <!-- START Notification Item-->
+                  <div class="notification-item  clearfix">
+                    <div class="heading">
+                      <a href="#" class="text-danger pull-left">
+                        <i class="fa fa-exclamation-triangle m-r-10"></i>
+                        <span class="bold">98% Server Load</span>
+                        <span class="fs-12 m-l-10">Take Action</span>
+                      </a>
+                      <span class="pull-right time">2 mins ago</span>
                     </div>
-                    <!-- START Notification Body-->
-                    <!-- START Notification Item-->
-                    <div class="notification-item  clearfix">
-                      <div class="heading">
-                        <a href="#" class="text-danger pull-left">
-                          <i class="fa fa-exclamation-triangle m-r-10"></i>
-                          <span class="bold">98% Server Load</span>
-                          <span class="fs-12 m-l-10">Take Action</span>
-                        </a>
-                        <span class="pull-right time">2 mins ago</span>
-                      </div>
-                      <!-- START Notification Item Right Side-->
-                      <div class="option">
-                        <a href="#" class="mark"></a>
-                      </div>
-                      <!-- END Notification Item Right Side-->
+                    <!-- START Notification Item Right Side-->
+                    <div class="option">
+                      <a href="#" class="mark"></a>
                     </div>
-                    <!-- END Notification Item-->
-                    <!-- START Notification Item-->
-                    <div class="notification-item  clearfix">
-                      <div class="heading">
-                        <a href="#" class="text-warning-dark pull-left">
-                          <i class="fa fa-exclamation-triangle m-r-10"></i>
-                          <span class="bold">Ready for patch - 3.3.23</span>
-                          <span class="fs-12 m-l-10">Take Action</span>
-                        </a>
-                        <span class="pull-right time">yesterday</span>
-                      </div>
-                      <!-- START Notification Item Right Side-->
-                      <div class="option">
-                        <a href="#" class="mark"></a>
-                      </div>
-                      <!-- END Notification Item Right Side-->
-                    </div>
-                    <!-- END Notification Item-->
-                    <!-- START Notification Item-->
-                    <div class="notification-item unread clearfix">
-                      <div class="heading">
-                        <div class="thumbnail-wrapper d24 circular b-white m-r-5 b-a b-white m-t-10 m-r-10">
-                          <img width="30" height="30" data-src-retina="/assets/img/profiles/1x.jpg" data-src="/assets/img/profiles/1.jpg" alt="" src="/assets/img/profiles/1.jpg">
-                        </div>
-                        <a href="#" class="text-complete pull-left">
-                          <span class="bold">Design Labs</span>
-                          <span class="fs-12 m-l-10">Owners</span>
-                        </a>
-                        <span class="pull-right time">11:00pm</span>
-                      </div>
-                      <!-- START Notification Item Right Side-->
-                      <div class="option" data-toggle="tooltip" data-placement="left" title="mark as read">
-                        <a href="#" class="mark"></a>
-                      </div>
-                      <!-- END Notification Item Right Side-->
-                    </div>
-                    <!-- END Notification Item-->
+                    <!-- END Notification Item Right Side-->
                   </div>
-                  <!-- END Notification Body-->
-                  <!-- START Notification Footer-->
-                  <div class="notification-footer text-center">
-                    <a href="#" class="">Read all notifications</a>
-                    <a data-toggle="refresh" class="portlet-refresh text-black pull-right" href="#">
-                      <i class="pg-refresh_new"></i>
-                    </a>
+                  <!-- END Notification Item-->
+                  <!-- START Notification Item-->
+                  <div class="notification-item  clearfix">
+                    <div class="heading">
+                      <a href="#" class="text-warning-dark pull-left">
+                        <i class="fa fa-exclamation-triangle m-r-10"></i>
+                        <span class="bold">Warning Notification</span>
+                        <span class="fs-12 m-l-10">Buy Now</span>
+                      </a>
+                      <span class="pull-right time">yesterday</span>
+                    </div>
+                    <!-- START Notification Item Right Side-->
+                    <div class="option">
+                      <a href="#" class="mark"></a>
+                    </div>
+                    <!-- END Notification Item Right Side-->
                   </div>
-                  <!-- START Notification Footer-->
+                  <!-- END Notification Item-->
+                  <!-- START Notification Item-->
+                  <div class="notification-item unread clearfix">
+                    <div class="heading">
+                      <div class="thumbnail-wrapper d24 circular b-white m-r-5 b-a b-white m-t-10 m-r-10">
+                        <img width="30" height="30" data-src-retina="assets/img/profiles/1x.jpg" data-src="assets/img/profiles/1.jpg" alt="" src="assets/img/profiles/1.jpg">
+                      </div>
+                      <a href="#" class="text-complete pull-left">
+                        <span class="bold">Revox Design Labs</span>
+                        <span class="fs-12 m-l-10">Owners</span>
+                      </a>
+                      <span class="pull-right time">11:00pm</span>
+                    </div>
+                    <!-- START Notification Item Right Side-->
+                    <div class="option" data-toggle="tooltip" data-placement="left" title="mark as read">
+                      <a href="#" class="mark"></a>
+                    </div>
+                    <!-- END Notification Item Right Side-->
+                  </div>
+                  <!-- END Notification Item-->
                 </div>
-                <!-- END Notification -->
+                <!-- END Notification Body-->
+                <!-- START Notification Footer-->
+                <div class="notification-footer text-center">
+                  <a href="#" class="">Read all notifications</a>
+                  <a data-toggle="refresh" class="portlet-refresh text-black pull-right" href="#">
+                    <i class="pg-refresh_new"></i>
+                  </a>
+                </div>
+                <!-- START Notification Footer-->
               </div>
-              <!-- END Notification Dropdown -->
+              <!-- END Notification -->
             </div>
-          </li>
-          <li class="p-r-15 inline">
-            <a href="#" class="icon-set clip "></a>
-          </li>
-          <li class="p-r-15 inline">
-            <a href="#" class="icon-set grid-box"></a>
-          </li>
-        </ul>
-        <!-- END NOTIFICATIONS LIST -->
-        <a href="#" class="search-link" data-toggle="search"><i class="pg-search"></i>Type anywhere to <span class="bold">search</span></a> </div>
+            <!-- END Notification Dropdown -->
+          </div>
+        </li>
+        <li class="p-r-10 inline">
+          <a href="#" class="header-icon pg pg-link"></a>
+        </li>
+        <li class="p-r-10 inline">
+          <a href="#" class="header-icon pg pg-thumbs"></a>
+        </li>
+      </ul>
+      <!-- END NOTIFICATIONS LIST -->
+      <a href="#" class="search-link hidden-md-down" data-toggle="search"><i class="pg-search"></i>Type anywhere to <span class="bold">search</span></a>
     </div>
-    <div class=" pull-right">
-      <div class="header-inner">
-        <a href="#" class="btn-link icon-set menu-hambuger-plus m-l-20 sm-no-margin hidden-sm hidden-xs" data-toggle="quickview" data-toggle-element="#quickview"></a>
-      </div>
-    </div>
-    <div class=" pull-right">
+    <div class="d-flex align-items-center">
       <!-- START User Info-->
-      <div class="visible-lg visible-md m-t-10">
-        <div class="pull-left p-r-10 p-t-10 fs-16 font-heading">
-          <span class="semi-bold">David</span> <span class="text-master">Nest</span>
-        </div>
-        <div class="dropdown pull-right">
-          <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="thumbnail-wrapper d32 circular inline m-t-5">
-                <img src="/assets/img/profiles/avatar.jpg" alt="" data-src="/assets/img/profiles/avatar.jpg" data-src-retina="/assets/img/profiles/avatar_small2x.jpg" width="32" height="32">
-            </span>
-          </button>
-          <ul class="dropdown-menu profile-dropdown" role="menu">
-            <li><a href="#"><i class="pg-settings_small"></i> Settings</a>
-            </li>
-            <li><a href="#"><i class="pg-signals"></i> Help</a>
-            </li>
-            <li class="bg-master-lighter">
-              <a href="#" class="clearfix">
-                <span class="pull-left">Logout</span>
-                <span class="pull-right"><i class="pg-power"></i></span>
-              </a>
-            </li>
-          </ul>
+      <div class="pull-left p-r-10 fs-14 font-heading hidden-md-down">
+        <span class="semi-bold">David</span> <span class="text-master">Nest</span>
+      </div>
+      <div class="dropdown pull-right hidden-md-down">
+        <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="thumbnail-wrapper d32 circular inline">
+              <img src="assets/img/profiles/avatar.jpg" alt="" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar_small2x.jpg" width="32" height="32">
+              </span>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right profile-dropdown" role="menu">
+          <a href="#" class="dropdown-item"><i class="pg-settings_small"></i> Settings</a>
+          <a href="#" class="dropdown-item"><i class="pg-outdent"></i> Feedback</a>
+          <a href="#" class="dropdown-item"><i class="pg-signals"></i> Help</a>
+          <a href="#" class="clearfix bg-master-lighter dropdown-item">
+            <span class="pull-left">Logout</span>
+            <span class="pull-right"><i class="pg-power"></i></span>
+          </a>
         </div>
       </div>
       <!-- END User Info-->
+      <a href="#" class="header-icon pg pg-alt_menu btn-link m-l-10 sm-no-margin d-inline-block" data-toggle="quickview" data-toggle-element="#quickview"></a>
     </div>
   </div>
-
+  <!-- END HEADER -->
   <!-- START PAGE CONTENT WRAPPER -->
   <div class="page-content-wrapper ">
-
-
-
+    <!-- START PAGE CONTENT -->
     <div class="content ">
-      <div class=" container-fluid   container-fixed-lg sm-p-l-0 sm-p-r-0">
-        <!-- START CATEGORY -->
-        <div class="gallery">
-          <div class="gallery-filters p-t-20 p-b-10">
-            <ul class="list-inline text-right">
-              <li class="hint-text">Sort by: </li>
-              <li><a href="#" class="active text-master p-r-5 p-l-5">Name</a></li>
-              <li><a href="#" class="text-master hint-text p-r-5 p-l-5">Views</a></li>
-              <li><a href="#" class="text-master hint-text p-r-5 p-l-5">Cost</a></li>
-              <li>
-                <button class="btn btn-primary m-l-10" data-toggle="filters">More filters</button>
-              </li>
-            </ul>
-          </div>
-          <!-- START GALLERY ITEM -->
-          <!--
-                FOR DEMO PURPOSES, FIRST GALLERY ITEM (.first) IS HIDDEN
-                FOR SCREENS <920px. PLEASE REMOVE THE CLASS 'first' WHEN YOU IMPLEMENT
-            -->
-          <div class="gallery-item first" data-width="1" data-height="1">
-            <!-- START PREVIEW -->
-            <img src="assets/img/gallery/1.jpg" alt="" class="image-responsive-height">
-            <!-- END PREVIEW -->
-            <!-- START ITEM OVERLAY DESCRIPTION -->
-            <div class="overlayer bottom-left full-width">
-              <div class="overlayer-wrapper item-info ">
-                <div class="gradient-grey p-l-20 p-r-20 p-t-20 p-b-5">
-                  <div class="">
-                    <p class="pull-left bold text-white fs-14 p-t-10">Happy Ninja</p>
-                    <h5 class="pull-right semi-bold text-white font-montserrat bold">$25.00</h5>
+      <div class="social-wrapper">
+        <div class="social " data-pages="social">
+
+          <div class=" container-fluid  m-t-20 container-fixed-lg sm-p-l-0 sm-p-r-0">
+            <div class="feed">
+              <!-- START DAY -->
+              <div class="day" data-social="day">
+
+                <div class="card social-card share  col1" data-social="item">
+                  <div class="card-header ">
+                    <h5 class="text-complete pull-left fs-12">Fresh Install <i
+                            class="fa fa-circle text-complete fs-11"></i></h5>
+                    <div class="pull-right small hint-text">
+                      12/22/2017
+                    </div>
                     <div class="clearfix"></div>
                   </div>
-                  <div class="m-t-10">
-                    <div class="thumbnail-wrapper d32 circular m-t-5">
-                      <img width="40" height="40" src="assets/img/profiles/avatar.jpg" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg" alt="">
+                  <div class="card-description">
+                    <h5>Patch 3.3.21 notes </h5>
+                  </div>
+                  <div class="card-footer clearfix">
+                    <div class="pull-left">By <span class="text-complete">ondot systems</span>
                     </div>
-                    <div class="inline m-l-10">
-                      <p class="no-margin text-white fs-12">Designed by Alex Nester</p>
-                      <p class="rating">
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star"></i>
-                      </p>
-                    </div>
-                    <div class="pull-right m-t-10">
-                      <button class="btn btn-white btn-xs btn-mini bold fs-14" type="button">+</button>
+                    <div class="pull-right hint-text">
+
+
+                      <button class="btn btn-xs bold fs-14" data-toggle="refresh" id="welcome1" name="welcome1" type="button">Choose</button>
                     </div>
                     <div class="clearfix"></div>
+
                   </div>
                 </div>
-              </div>
-            </div>
-            <!-- END PRODUCT OVERLAY DESCRIPTION -->
-          </div>
-          <!-- END GALLERY ITEM -->
-          <!-- START GALLERY ITEM -->
-          <!--
-                FOR DEMO PURPOSES, FIRST GALLERY ITEM (.first) IS HIDDEN
-                FOR SCREENS <920px. PLEASE REMOVE THE CLASS 'first' WHEN YOU IMPLEMENT
-            -->
-          <div class="gallery-item " data-width="2" data-height="2">
-            <!-- START PREVIEW -->
-            <div class="live-tile slide" data-speed="750" data-delay="4000" data-mode="carousel">
-              <div class="slide-front">
-                <img src="assets/img/gallery/2_1.jpg" alt="" class="image-responsive-height">
-              </div>
-              <div class="slide-back">
-                <img src="assets/img/gallery/2_2.jpg" alt="" class="image-responsive-height">
-              </div>
-            </div>
-            <!-- END PREVIEW -->
-            <!-- START ITEM OVERLAY DESCRIPTION -->
-            <div class="overlayer bottom-left full-width">
-              <div class="overlayer-wrapper item-info more-content">
-                <div class="gradient-grey p-l-20 p-r-20 p-t-20 p-b-5">
-                  <div class="">
-                    <h3 class="pull-left bold text-white no-margin">Happy Ninja</h3>
-                    <h3 class="pull-right semi-bold text-white font-montserrat bold no-margin">$25.00</h3>
-                    <div class="clearfix"></div>
-                    <span class="hint-text pull-left text-white">Hand and mind crafted</span>
+
+                <div class="card social-card share  col1" data-social="item">
+                  <div class="card-header ">
+                    <h5 class="text-success pull-left fs-12">Patch <i
+                            class="fa fa-circle text-success fs-11"></i></h5>
+                    <div class="pull-right small hint-text">
+                      12/22/2017
+                    </div>
                     <div class="clearfix"></div>
                   </div>
-                  <div class="">
-                    <h5 class="text-white light">Most Sold Item in the marketplace</h5>
+                  <div class="card-description">
+                    <h5>Patch 3.3.21 notes </h5>
                   </div>
-                  <div class="m-t-10">
-                    <div class="thumbnail-wrapper d32 circular m-t-5">
-                      <img width="40" height="40" src="assets/img/profiles/avatar.jpg" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg" alt="">
+                  <div class="card-footer clearfix">
+                    <div class="pull-left">By <span class="text-complete">ondot systems</span>
                     </div>
-                    <div class="inline m-l-10">
-                      <p class="no-margin text-white fs-12">Designed by Alex Nester</p>
-                      <p class="rating">
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star"></i>
-                      </p>
-                    </div>
-                    <div class="pull-right m-t-10">
-                      <button class="btn btn-white btn-xs btn-mini bold fs-14" type="button">+</button>
+                    <div class="pull-right hint-text">
+
+
+                      <button class="btn btn-xs bold fs-14" data-toggle="refresh" id="welcome2" name="welcome2" type="button">Choose</button>
                     </div>
                     <div class="clearfix"></div>
+
                   </div>
                 </div>
-              </div>
-            </div>
-            <!-- END PRODUCT OVERLAY DESCRIPTION -->
-          </div>
-          <!-- END GALLERY ITEM -->
-          <!-- START GALLERY ITEM -->
-          <!--
-                FOR DEMO PURPOSES, FIRST GALLERY ITEM (.first) IS HIDDEN
-                FOR SCREENS <920px. PLEASE REMOVE THE CLASS 'first' WHEN YOU IMPLEMENT
-            -->
-          <div class="gallery-item " data-width="1" data-height="1">
-            <!-- START PREVIEW -->
-            <img src="assets/img/gallery/3.jpg" alt="" class="image-responsive-height">
-            <!-- END PREVIEW -->
-            <!-- START ITEM OVERLAY DESCRIPTION -->
-            <div class="overlayer bottom-left full-width">
-              <div class="overlayer-wrapper item-info ">
-                <div class="gradient-grey p-l-20 p-r-20 p-t-20 p-b-5">
-                  <div class="">
-                    <p class="pull-left bold text-white fs-14 p-t-10">Happy Ninja</p>
-                    <h5 class="pull-right semi-bold text-white font-montserrat bold">$25.00</h5>
+
+                <div class="card social-card share  col1" data-social="item">
+                  <div class="card-header ">
+                    <h5 class="text-warning pull-left fs-12">Upgrade <i
+                            class="fa fa-circle text-warning fs-11"></i></h5>
+                    <div class="pull-right small hint-text">
+                      12/22/2017
+                    </div>
                     <div class="clearfix"></div>
                   </div>
-                  <div class="m-t-10">
-                    <div class="thumbnail-wrapper d32 circular m-t-5">
-                      <img width="40" height="40" src="assets/img/profiles/avatar.jpg" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg" alt="">
+                  <div class="card-description">
+                    <h5>Patch 3.3.21 notes </h5>
+                  </div>
+                  <div class="card-footer clearfix">
+                    <div class="pull-left">By <span class="text-complete">ondot systems</span>
                     </div>
-                    <div class="inline m-l-10">
-                      <p class="no-margin text-white fs-12">Designed by Alex Nester</p>
-                      <p class="rating">
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star"></i>
-                      </p>
-                    </div>
-                    <div class="pull-right m-t-10">
-                      <button class="btn btn-white btn-xs btn-mini bold fs-14" type="button">+</button>
+                    <div class="pull-right hint-text">
+
+
+                      <button class="btn btn-xs bold fs-14" data-toggle="refresh" id="welcome3" name="welcome3" type="button">Choose</button>
                     </div>
                     <div class="clearfix"></div>
+
                   </div>
                 </div>
-              </div>
-            </div>
-            <!-- END PRODUCT OVERLAY DESCRIPTION -->
-          </div>
-          <!-- END GALLERY ITEM -->
-          <!-- START GALLERY ITEM -->
-          <!--
-                FOR DEMO PURPOSES, FIRST GALLERY ITEM (.first) IS HIDDEN
-                FOR SCREENS <920px. PLEASE REMOVE THE CLASS 'first' WHEN YOU IMPLEMENT
-            -->
-          <div class="gallery-item " data-width="1" data-height="1">
-            <!-- START PREVIEW -->
-            <img src="assets/img/gallery/4.jpg" alt="" class="image-responsive-height">
-            <!-- END PREVIEW -->
-            <!-- START ITEM OVERLAY DESCRIPTION -->
-            <div class="overlayer bottom-left full-width">
-              <div class="overlayer-wrapper item-info ">
-                <div class="gradient-grey p-l-20 p-r-20 p-t-20 p-b-5">
-                  <div class="">
-                    <p class="pull-left bold text-white fs-14 p-t-10">Happy Ninja</p>
-                    <h5 class="pull-right semi-bold text-white font-montserrat bold">$25.00</h5>
+
+                <div class="card social-card share  col1" data-social="item">
+                  <div class="card-header ">
+                    <h5 class="text-info pull-left fs-12">Configuration Update  <i
+                            class="fa fa-circle text-info fs-11"></i></h5>
+                    <div class="pull-right small hint-text">
+                      12/22/2017
+                    </div>
                     <div class="clearfix"></div>
                   </div>
-                  <div class="m-t-10">
-                    <div class="thumbnail-wrapper d32 circular m-t-5">
-                      <img width="40" height="40" src="assets/img/profiles/avatar.jpg" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg" alt="">
+                  <div class="card-description">
+                    <h5>Patch 3.3.21 notes </h5>
+                  </div>
+                  <div class="card-footer clearfix">
+                    <div class="pull-left">By <span class="text-complete">ondot systems</span>
                     </div>
-                    <div class="inline m-l-10">
-                      <p class="no-margin text-white fs-12">Designed by Alex Nester</p>
-                      <p class="rating">
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star"></i>
-                      </p>
-                    </div>
-                    <div class="pull-right m-t-10">
-                      <button class="btn btn-white btn-xs btn-mini bold fs-14" type="button">+</button>
+                    <div class="pull-right hint-text">
+
+
+                      <button class="btn btn-xs bold fs-14" data-toggle="refresh" id="welcome4" name="welcome4" type="button">Choose</button>
                     </div>
                     <div class="clearfix"></div>
+
                   </div>
                 </div>
+
               </div>
+              <!-- END DAY -->
             </div>
-            <!-- END PRODUCT OVERLAY DESCRIPTION -->
+            <!-- END FEED -->
           </div>
-          <!-- END GALLERY ITEM -->
-          <!-- START GALLERY ITEM -->
-          <!--
-                FOR DEMO PURPOSES, FIRST GALLERY ITEM (.first) IS HIDDEN
-                FOR SCREENS <920px. PLEASE REMOVE THE CLASS 'first' WHEN YOU IMPLEMENT
-            -->
-          <div class="gallery-item " data-width="1" data-height="1">
-            <!-- START PREVIEW -->
-            <img src="assets/img/gallery/5.jpg" alt="" class="image-responsive-height">
-            <!-- END PREVIEW -->
-            <!-- START ITEM OVERLAY DESCRIPTION -->
-            <div class="overlayer bottom-left full-width">
-              <div class="overlayer-wrapper item-info ">
-                <div class="gradient-grey p-l-20 p-r-20 p-t-20 p-b-5">
-                  <div class="">
-                    <p class="pull-left bold text-white fs-14 p-t-10">Happy Ninja</p>
-                    <h5 class="pull-right semi-bold text-white font-montserrat bold">$25.00</h5>
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="m-t-10">
-                    <div class="thumbnail-wrapper d32 circular m-t-5">
-                      <img width="40" height="40" src="assets/img/profiles/avatar.jpg" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg" alt="">
-                    </div>
-                    <div class="inline m-l-10">
-                      <p class="no-margin text-white fs-12">Designed by Alex Nester</p>
-                      <p class="rating">
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star"></i>
-                      </p>
-                    </div>
-                    <div class="pull-right m-t-10">
-                      <button class="btn btn-white btn-xs btn-mini bold fs-14" type="button">+</button>
-                    </div>
-                    <div class="clearfix"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- END PRODUCT OVERLAY DESCRIPTION -->
-          </div>
-          <!-- END GALLERY ITEM -->
-          <!-- START GALLERY ITEM -->
-          <!--
-                FOR DEMO PURPOSES, FIRST GALLERY ITEM (.first) IS HIDDEN
-                FOR SCREENS <920px. PLEASE REMOVE THE CLASS 'first' WHEN YOU IMPLEMENT
-            -->
-          <div class="gallery-item " data-width="1" data-height="1">
-            <!-- START PREVIEW -->
-            <img src="assets/img/gallery/6.jpg" alt="" class="image-responsive-height">
-            <!-- END PREVIEW -->
-            <!-- START ITEM OVERLAY DESCRIPTION -->
-            <div class="overlayer bottom-left full-width">
-              <div class="overlayer-wrapper item-info ">
-                <div class="gradient-grey p-l-20 p-r-20 p-t-20 p-b-5">
-                  <div class="">
-                    <p class="pull-left bold text-white fs-14 p-t-10">Happy Ninja</p>
-                    <h5 class="pull-right semi-bold text-white font-montserrat bold">$25.00</h5>
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="m-t-10">
-                    <div class="thumbnail-wrapper d32 circular m-t-5">
-                      <img width="40" height="40" src="assets/img/profiles/avatar.jpg" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg" alt="">
-                    </div>
-                    <div class="inline m-l-10">
-                      <p class="no-margin text-white fs-12">Designed by Alex Nester</p>
-                      <p class="rating">
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star"></i>
-                      </p>
-                    </div>
-                    <div class="pull-right m-t-10">
-                      <button class="btn btn-white btn-xs btn-mini bold fs-14" type="button">+</button>
-                    </div>
-                    <div class="clearfix"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- END PRODUCT OVERLAY DESCRIPTION -->
-          </div>
-          <!-- END GALLERY ITEM -->
-          <!-- START GALLERY ITEM -->
-          <!--
-                FOR DEMO PURPOSES, FIRST GALLERY ITEM (.first) IS HIDDEN
-                FOR SCREENS <920px. PLEASE REMOVE THE CLASS 'first' WHEN YOU IMPLEMENT
-            -->
-          <div class="gallery-item " data-width="1" data-height="1">
-            <!-- START PREVIEW -->
-            <img src="assets/img/gallery/7.jpg" alt="" class="image-responsive-height">
-            <!-- END PREVIEW -->
-            <!-- START ITEM OVERLAY DESCRIPTION -->
-            <div class="overlayer bottom-left full-width">
-              <div class="overlayer-wrapper item-info ">
-                <div class="gradient-grey p-l-20 p-r-20 p-t-20 p-b-5">
-                  <div class="">
-                    <p class="pull-left bold text-white fs-14 p-t-10">Happy Ninja</p>
-                    <h5 class="pull-right semi-bold text-white font-montserrat bold">$25.00</h5>
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="m-t-10">
-                    <div class="thumbnail-wrapper d32 circular m-t-5">
-                      <img width="40" height="40" src="assets/img/profiles/avatar.jpg" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg" alt="">
-                    </div>
-                    <div class="inline m-l-10">
-                      <p class="no-margin text-white fs-12">Designed by Alex Nester</p>
-                      <p class="rating">
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star"></i>
-                      </p>
-                    </div>
-                    <div class="pull-right m-t-10">
-                      <button class="btn btn-white btn-xs btn-mini bold fs-14" type="button">+</button>
-                    </div>
-                    <div class="clearfix"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- END PRODUCT OVERLAY DESCRIPTION -->
-          </div>
-          <!-- END GALLERY ITEM -->
-          <!-- START GALLERY ITEM -->
-          <!--
-                FOR DEMO PURPOSES, FIRST GALLERY ITEM (.first) IS HIDDEN
-                FOR SCREENS <920px. PLEASE REMOVE THE CLASS 'first' WHEN YOU IMPLEMENT
-            -->
-          <div class="gallery-item " data-width="1" data-height="1">
-            <!-- START PREVIEW -->
-            <img src="assets/img/gallery/8.jpg" alt="" class="image-responsive-height">
-            <!-- END PREVIEW -->
-            <!-- START ITEM OVERLAY DESCRIPTION -->
-            <div class="overlayer bottom-left full-width">
-              <div class="overlayer-wrapper item-info ">
-                <div class="gradient-grey p-l-20 p-r-20 p-t-20 p-b-5">
-                  <div class="">
-                    <p class="pull-left bold text-white fs-14 p-t-10">Happy Ninja</p>
-                    <h5 class="pull-right semi-bold text-white font-montserrat bold">$25.00</h5>
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="m-t-10">
-                    <div class="thumbnail-wrapper d32 circular m-t-5">
-                      <img width="40" height="40" src="assets/img/profiles/avatar.jpg" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg" alt="">
-                    </div>
-                    <div class="inline m-l-10">
-                      <p class="no-margin text-white fs-12">Designed by Alex Nester</p>
-                      <p class="rating">
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star"></i>
-                      </p>
-                    </div>
-                    <div class="pull-right m-t-10">
-                      <button class="btn btn-white btn-xs btn-mini bold fs-14" type="button">+</button>
-                    </div>
-                    <div class="clearfix"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- END PRODUCT OVERLAY DESCRIPTION -->
-          </div>
-          <!-- END GALLERY ITEM -->
-          <!-- START GALLERY ITEM -->
-          <!--
-                FOR DEMO PURPOSES, FIRST GALLERY ITEM (.first) IS HIDDEN
-                FOR SCREENS <920px. PLEASE REMOVE THE CLASS 'first' WHEN YOU IMPLEMENT
-            -->
-          <div class="gallery-item " data-width="1" data-height="1">
-            <!-- START PREVIEW -->
-            <img src="assets/img/gallery/9.jpg" alt="" class="image-responsive-height">
-            <!-- END PREVIEW -->
-            <!-- START ITEM OVERLAY DESCRIPTION -->
-            <div class="overlayer bottom-left full-width">
-              <div class="overlayer-wrapper item-info ">
-                <div class="gradient-grey p-l-20 p-r-20 p-t-20 p-b-5">
-                  <div class="">
-                    <p class="pull-left bold text-white fs-14 p-t-10">Happy Ninja</p>
-                    <h5 class="pull-right semi-bold text-white font-montserrat bold">$25.00</h5>
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="m-t-10">
-                    <div class="thumbnail-wrapper d32 circular m-t-5">
-                      <img width="40" height="40" src="assets/img/profiles/avatar.jpg" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg" alt="">
-                    </div>
-                    <div class="inline m-l-10">
-                      <p class="no-margin text-white fs-12">Designed by Alex Nester</p>
-                      <p class="rating">
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star"></i>
-                      </p>
-                    </div>
-                    <div class="pull-right m-t-10">
-                      <button class="btn btn-white btn-xs btn-mini bold fs-14" type="button">+</button>
-                    </div>
-                    <div class="clearfix"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- END PRODUCT OVERLAY DESCRIPTION -->
-          </div>
-          <!-- END GALLERY ITEM -->
-          <!-- START GALLERY ITEM -->
-          <!--
-                FOR DEMO PURPOSES, FIRST GALLERY ITEM (.first) IS HIDDEN
-                FOR SCREENS <920px. PLEASE REMOVE THE CLASS 'first' WHEN YOU IMPLEMENT
-            -->
-          <div class="gallery-item " data-width="1" data-height="1">
-            <!-- START PREVIEW -->
-            <img src="assets/img/gallery/10.jpg" alt="" class="image-responsive-height">
-            <!-- END PREVIEW -->
-            <!-- START ITEM OVERLAY DESCRIPTION -->
-            <div class="overlayer bottom-left full-width">
-              <div class="overlayer-wrapper item-info ">
-                <div class="gradient-grey p-l-20 p-r-20 p-t-20 p-b-5">
-                  <div class="">
-                    <p class="pull-left bold text-white fs-14 p-t-10">Happy Ninja</p>
-                    <h5 class="pull-right semi-bold text-white font-montserrat bold">$25.00</h5>
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="m-t-10">
-                    <div class="thumbnail-wrapper d32 circular m-t-5">
-                      <img width="40" height="40" src="assets/img/profiles/avatar.jpg" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg" alt="">
-                    </div>
-                    <div class="inline m-l-10">
-                      <p class="no-margin text-white fs-12">Designed by Alex Nester</p>
-                      <p class="rating">
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star"></i>
-                      </p>
-                    </div>
-                    <div class="pull-right m-t-10">
-                      <button class="btn btn-white btn-xs btn-mini bold fs-14" type="button">+</button>
-                    </div>
-                    <div class="clearfix"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- END PRODUCT OVERLAY DESCRIPTION -->
-          </div>
-          <!-- END GALLERY ITEM -->
-          <!-- START GALLERY ITEM -->
-          <!--
-                FOR DEMO PURPOSES, FIRST GALLERY ITEM (.first) IS HIDDEN
-                FOR SCREENS <920px. PLEASE REMOVE THE CLASS 'first' WHEN YOU IMPLEMENT
-            -->
-          <div class="gallery-item " data-width="1" data-height="1">
-            <!-- START PREVIEW -->
-            <img src="assets/img/gallery/11.jpg" alt="" class="image-responsive-height">
-            <!-- END PREVIEW -->
-            <!-- START ITEM OVERLAY DESCRIPTION -->
-            <div class="overlayer bottom-left full-width">
-              <div class="overlayer-wrapper item-info ">
-                <div class="gradient-grey p-l-20 p-r-20 p-t-20 p-b-5">
-                  <div class="">
-                    <p class="pull-left bold text-white fs-14 p-t-10">Happy Ninja</p>
-                    <h5 class="pull-right semi-bold text-white font-montserrat bold">$25.00</h5>
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="m-t-10">
-                    <div class="thumbnail-wrapper d32 circular m-t-5">
-                      <img width="40" height="40" src="assets/img/profiles/avatar.jpg" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg" alt="">
-                    </div>
-                    <div class="inline m-l-10">
-                      <p class="no-margin text-white fs-12">Designed by Alex Nester</p>
-                      <p class="rating">
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star"></i>
-                      </p>
-                    </div>
-                    <div class="pull-right m-t-10">
-                      <button class="btn btn-white btn-xs btn-mini bold fs-14" type="button">+</button>
-                    </div>
-                    <div class="clearfix"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- END PRODUCT OVERLAY DESCRIPTION -->
-          </div>
-          <!-- END GALLERY ITEM -->
-          <!-- START GALLERY ITEM -->
-          <!--
-                FOR DEMO PURPOSES, FIRST GALLERY ITEM (.first) IS HIDDEN
-                FOR SCREENS <920px. PLEASE REMOVE THE CLASS 'first' WHEN YOU IMPLEMENT
-            -->
-          <div class="gallery-item " data-width="1" data-height="1">
-            <!-- START PREVIEW -->
-            <img src="assets/img/gallery/12.jpg" alt="" class="image-responsive-height">
-            <!-- END PREVIEW -->
-            <!-- START ITEM OVERLAY DESCRIPTION -->
-            <div class="overlayer bottom-left full-width">
-              <div class="overlayer-wrapper item-info ">
-                <div class="gradient-grey p-l-20 p-r-20 p-t-20 p-b-5">
-                  <div class="">
-                    <p class="pull-left bold text-white fs-14 p-t-10">Happy Ninja</p>
-                    <h5 class="pull-right semi-bold text-white font-montserrat bold">$25.00</h5>
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="m-t-10">
-                    <div class="thumbnail-wrapper d32 circular m-t-5">
-                      <img width="40" height="40" src="assets/img/profiles/avatar.jpg" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg" alt="">
-                    </div>
-                    <div class="inline m-l-10">
-                      <p class="no-margin text-white fs-12">Designed by Alex Nester</p>
-                      <p class="rating">
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star"></i>
-                      </p>
-                    </div>
-                    <div class="pull-right m-t-10">
-                      <button class="btn btn-white btn-xs btn-mini bold fs-14" type="button">+</button>
-                    </div>
-                    <div class="clearfix"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- END PRODUCT OVERLAY DESCRIPTION -->
-          </div>
-          <!-- END GALLERY ITEM -->
-          <!-- START GALLERY ITEM -->
-          <!--
-                FOR DEMO PURPOSES, FIRST GALLERY ITEM (.first) IS HIDDEN
-                FOR SCREENS <920px. PLEASE REMOVE THE CLASS 'first' WHEN YOU IMPLEMENT
-            -->
-          <div class="gallery-item " data-width="1" data-height="1">
-            <!-- START PREVIEW -->
-            <img src="assets/img/gallery/13.jpg" alt="" class="image-responsive-height">
-            <!-- END PREVIEW -->
-            <!-- START ITEM OVERLAY DESCRIPTION -->
-            <div class="overlayer bottom-left full-width">
-              <div class="overlayer-wrapper item-info ">
-                <div class="gradient-grey p-l-20 p-r-20 p-t-20 p-b-5">
-                  <div class="">
-                    <p class="pull-left bold text-white fs-14 p-t-10">Happy Ninja</p>
-                    <h5 class="pull-right semi-bold text-white font-montserrat bold">$25.00</h5>
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="m-t-10">
-                    <div class="thumbnail-wrapper d32 circular m-t-5">
-                      <img width="40" height="40" src="assets/img/profiles/avatar.jpg" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg" alt="">
-                    </div>
-                    <div class="inline m-l-10">
-                      <p class="no-margin text-white fs-12">Designed by Alex Nester</p>
-                      <p class="rating">
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star"></i>
-                      </p>
-                    </div>
-                    <div class="pull-right m-t-10">
-                      <button class="btn btn-white btn-xs btn-mini bold fs-14" type="button">+</button>
-                    </div>
-                    <div class="clearfix"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- END PRODUCT OVERLAY DESCRIPTION -->
-          </div>
-          <!-- END GALLERY ITEM -->
-          <!-- START GALLERY ITEM -->
-          <!--
-                FOR DEMO PURPOSES, FIRST GALLERY ITEM (.first) IS HIDDEN
-                FOR SCREENS <920px. PLEASE REMOVE THE CLASS 'first' WHEN YOU IMPLEMENT
-            -->
-          <div class="gallery-item " data-width="1" data-height="1">
-            <!-- START PREVIEW -->
-            <img src="assets/img/gallery/14.jpg" alt="" class="image-responsive-height">
-            <!-- END PREVIEW -->
-            <!-- START ITEM OVERLAY DESCRIPTION -->
-            <div class="overlayer bottom-left full-width">
-              <div class="overlayer-wrapper item-info ">
-                <div class="gradient-grey p-l-20 p-r-20 p-t-20 p-b-5">
-                  <div class="">
-                    <p class="pull-left bold text-white fs-14 p-t-10">Happy Ninja</p>
-                    <h5 class="pull-right semi-bold text-white font-montserrat bold">$25.00</h5>
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="m-t-10">
-                    <div class="thumbnail-wrapper d32 circular m-t-5">
-                      <img width="40" height="40" src="assets/img/profiles/avatar.jpg" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg" alt="">
-                    </div>
-                    <div class="inline m-l-10">
-                      <p class="no-margin text-white fs-12">Designed by Alex Nester</p>
-                      <p class="rating">
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star rated"></i>
-                        <i class="fa fa-star"></i>
-                      </p>
-                    </div>
-                    <div class="pull-right m-t-10">
-                      <button class="btn btn-white btn-xs btn-mini bold fs-14" type="button">+</button>
-                    </div>
-                    <div class="clearfix"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- END PRODUCT OVERLAY DESCRIPTION -->
-          </div>
-          <!-- END GALLERY ITEM -->
+          <!-- END CONTAINER FLUID -->
         </div>
-        <!-- END CATEGORY -->
+        <!-- /container -->
       </div>
+    </div>
+    <!-- END PAGE CONTENT -->
     <!-- START COPYRIGHT -->
+    <!-- START CONTAINER FLUID -->
+    <!-- END COPYRIGHT -->
   </div>
-
-
   <!-- END PAGE CONTENT WRAPPER -->
 </div>
 <!-- END PAGE CONTAINER -->
@@ -2201,69 +1648,40 @@
   <!-- END Overlay Content !-->
 </div>
 <!-- END OVERLAY -->
-
-<div class="modal fade slide-up disable-scroll" id="modalSlideUp" tabindex="-1" role="dialog" aria-hidden="false">
-  <div class="modal-dialog ">
-    <div class="modal-content-wrapper">
-      <div class="modal-content">
-        <div class="modal-header clearfix text-left">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i>
-          </button>
-          <h5>Within Site  <span class="semi-bold">Single Host</span></h5>
-          <p class="p-b-10">This model is a most basic deployment in which all components run in one host.</p>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="p-t-20 clearfix p-l-10 p-r-10">
-                One can ask why Redis runs in this model given the fact that there is only one component instance.
-                The answer for the question is that when FIServer or ISAgent get restarted due to unknown reasons,
-                it can use states stored in Redis so that a service disruption can get reduced.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /.modal-content -->
-  </div>
-</div>
-<!-- /.modal-dialog -->
-
 <!-- BEGIN VENDOR JS -->
 <script src="/assets/plugins/pace/pace.min.js" type="text/javascript"></script>
 <script src="/assets/plugins/jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
 <script src="/assets/plugins/modernizr.custom.js" type="text/javascript"></script>
 <script src="/assets/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
-<script src="/assets/plugins/bootstrapv3/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="/assets/plugins/tether/js/tether.min.js" type="text/javascript"></script>
+<script src="/assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="/assets/plugins/jquery/jquery-easy.js" type="text/javascript"></script>
 <script src="/assets/plugins/jquery-unveil/jquery.unveil.min.js" type="text/javascript"></script>
-<script src="/assets/plugins/jquery-bez/jquery.bez.min.js"></script>
 <script src="/assets/plugins/jquery-ios-list/jquery.ioslist.min.js" type="text/javascript"></script>
 <script src="/assets/plugins/jquery-actual/jquery.actual.min.js"></script>
 <script src="/assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js"></script>
 <script type="text/javascript" src="/assets/plugins/select2/js/select2.full.min.js"></script>
 <script type="text/javascript" src="/assets/plugins/classie/classie.js"></script>
 <script src="/assets/plugins/switchery/js/switchery.min.js" type="text/javascript"></script>
-<script src="/assets/plugins/bootstrap3-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
-<script type="text/javascript" src="/assets/plugins/jquery-autonumeric/autoNumeric.js"></script>
-<script type="text/javascript" src="/assets/plugins/dropzone/dropzone.min.js"></script>
-<script type="text/javascript" src="/assets/plugins/bootstrap-tag/bootstrap-tagsinput.min.js"></script>
-<script type="text/javascript" src="/assets/plugins/jquery-inputmask/jquery.inputmask.min.js"></script>
-<script src="/assets/plugins/bootstrap-form-wizard/js/jquery.bootstrap.wizard.min.js" type="text/javascript"></script>
-<script src="/assets/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script>
-<script src="/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js" type="text/javascript"></script>
-<script src="/assets/plugins/summernote/js/summernote.min.js" type="text/javascript"></script>
-<script src="/assets/plugins/moment/moment.min.js"></script>
-<script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
-<script src="/assets/plugins/bootstrap-timepicker/bootstrap-timepicker.min.js"></script>
+<script src="/assets/plugins/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="/assets/plugins/jquery-isotope/isotope.pkgd.min.js" type="text/javascript"></script>
+<script src="/assets/plugins/classie/classie.js" type="text/javascript"></script>
+<script src="/assets/plugins/codrops-stepsform/js/stepsForm.js" type="text/javascript"></script>
 <!-- END VENDOR JS -->
 <!-- BEGIN CORE TEMPLATE JS -->
 <script src="/pages/js/pages.min.js"></script>
+<script src="/pages/js/pages.social.min.js"></script>
 <!-- END CORE TEMPLATE JS -->
 <!-- BEGIN PAGE LEVEL JS -->
-<script src="/assets/js/index.js" type="text/javascript"></script>
-<script src="/assets/js/gallery.js" type="text/javascript"></script>
+<script src="/assets/js/scripts.js" type="text/javascript"></script>
+<script src="/assets/js/scripts.js" type="text/javascript"></script>
 <!-- END PAGE LEVEL JS -->
+<script>
+    $(document).ready(function() {
+        $('#welcome1').click(function() {
+            location.href="/configuration/architecture";
+        });
+    } );
+</script>
 </body>
 </html>

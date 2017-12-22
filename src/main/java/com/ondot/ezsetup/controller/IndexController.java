@@ -20,7 +20,7 @@ public class IndexController {
         return mav;
     }
 
-    @RequestMapping(value = "/welcome", method = RequestMethod.GET)
+    @RequestMapping(value = "/welcome",  method = { RequestMethod.GET, RequestMethod.POST })
     public ModelAndView getWelcomePage(Model model) {
 
         ModelAndView mav = new ModelAndView();

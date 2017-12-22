@@ -357,81 +357,64 @@
                                 <p class="small no-margin">Creating to</p>
                                 <h5 class="semi-bold m-t-0">ondot (Hostname)</h5>
                                 <address>
-                                    <strong>IP : 10.0.2.15</strong>
-                                    <br>SUBNET : 255.255.255.0
-                                    <br>GATEWAY : 10.0.2.1
-                                    <br>DNS : 168.126.68.1
+                                    <strong>Network Information</strong>
+                                    <br>
+                                    <br>NTP IP ADDRESS : 10.0.2.15
+                                    <br>NAME SERVER 1 : 172.30.30.11
+                                    <br>NAME SERVER 2 : 172.30.30.12
+                                    <br>TIMEZONE : PST
+
                                 </address>
                             </div>
                             <div class="col-md-3 col-sm-height col-bottom sm-no-padding sm-p-b-20">
                                 <br>
                                 <div>
-                                    <div class="pull-left font-montserrat bold all-caps">Create No :</div>
-                                    <div class="pull-right">0047</div>
+                                    <div class="pull-left font-montserrat bold all-caps">Host 1 (192.168.128.30)</div>
+                                    <div class="pull-right">jkvm1</div>
                                     <div class="clearfix"></div>
                                 </div>
                                 <div>
-                                    <div class="pull-left font-montserrat bold all-caps">Create date :</div>
-                                    <div class="pull-right">29/09/17</div>
+                                    <div class="pull-left font-montserrat bold all-caps">Host 2 (192.168.128.31)</div>
+                                    <div class="pull-right">jkvm2</div>
                                     <div class="clearfix"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="table-responsive">
-                        <table class="table m-t-50">
+                    <div class="table-responsive  m-t-50">
+
+                        <strong>Interface Information</strong>
+                        <table class="table">
                             <thead>
                             <tr>
                                 <th class="">Name</th>
-                                <th class="text-center">IP</th>
-                                <th class="text-center">Role</th>
-                                <th class="text-right">Verification </th>
+                                <th class="text-center">IP & Port</th>
+                                <th class="text-center">Gateway</th>
+                                <th class="text-right">Subnet Mask</th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr>
                                 <td class="">
-                                    <p class="text-black">Eth 0</p>
+                                    <p class="text-black">FI Server</p>
                                     <p class="small hint-text">
-                                        SSH
+                                        eth0:0
                                     </p>
                                 </td>
-                                <td class="text-center">10.0.2.15</td>
-                                <td class="text-center">Database</td>
-                                <td class="text-right">Passed</td>
-                            </tr>
-                            <tr>
-                                <td class="">
-                                    <p class="text-black">Eth 0:0</p>
-                                    <p class="small hint-text">
-                                        SSH
-                                    </p>
-                                </td>
-                                <td class="text-center">10.0.2.16</td>
-                                <td class="text-center">fiserver, mConsole</td>
-                                <td class="text-right">Passed</td>
+                                <td class="text-center">10.0.2.15:443</td>
+                                <td class="text-center">10.0.2.1</td>
+                                <td class="text-right">255.255.255.0</td>
                             </tr>
                             <tr>
                                 <td class="">
                                     <p class="text-black">Eth 0:1</p>
                                     <p class="small hint-text">
-                                        isAgent
+                                        mConsole
                                     </p>
                                 </td>
-                                <td class="text-center">10.0.2.17</td>
-                                <td class="text-center">Database</td>
-                                <td class="text-right">Passed</td>
-                            </tr>
-                            <tr>
-                                <td class="">
-                                    <p class="text-black">Eth 0:2</p>
-                                    <p class="small hint-text">
-                                        nagios
-                                    </p>
-                                </td>
-                                <td class="text-center">10.0.2.17</td>
-                                <td class="text-center">Database</td>
-                                <td class="text-right">Passed</td>
+                                    <td class="text-center">10.0.2.16:1443</td>
+                                <td class="text-center">10.0.2.1</td>
+                                <td class="text-right">255.255.255.0</td>
                             </tr>
                             </tbody>
                         </table>
