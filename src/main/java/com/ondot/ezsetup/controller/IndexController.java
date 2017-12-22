@@ -19,4 +19,12 @@ public class IndexController {
         mav.setViewName("index");
         return mav;
     }
+
+    @RequestMapping(value = "/welcome", method = RequestMethod.GET)
+    public ModelAndView getWelcomePage(Model model) {
+
+        ModelAndView mav = new ModelAndView();
+        mav.setViewName("welcome");
+        return mav;
+    }
 }

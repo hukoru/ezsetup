@@ -316,11 +316,11 @@
                     <!-- Nav tabs -->
                     <div class="btn-group" >
 
-                        <button class="btn btn-default btn-sm m-t-10">Architecture</button>
-                        <button class="btn btn-default btn-sm m-t-10">Environment & Host information</button>
-                        <button class="btn btn-default btn-sm m-t-10">Interface Information</button>
-                        <button class="btn btn-default btn-sm m-t-10">Service Endpoints</button>
-                        <button class="btn btn-success btn-sm m-t-10">Review</button>
+                        <button id="button_architecture" class="btn btn-default btn-sm m-t-10">Architecture</button>
+                        <button id="button_environment" class="btn btn-default btn-sm m-t-10">Environment & Host information</button>
+                        <button id="button_interface" class="btn btn-default btn-sm m-t-10">Interface Information</button>
+                        <button id="button_endpoints" class="btn btn-default btn-sm m-t-10">Service Endpoints</button>
+                        <button id="button_summary" class="btn btn-success btn-sm m-t-10">Summary & Expert</button>
 
                     </div>
 
@@ -2031,6 +2031,22 @@
                 orderData: [ 4, 0 ]
             } ]
         } );
+
+        $('#button_architecture').click(function() {
+            location.href="/configuration/architecture";
+        });
+        $('#button_environment').click(function() {
+            location.href="/configuration/environment";
+        });
+        $('#button_interface').click(function() {
+            location.href="/configuration/interface";
+        });
+        $('#button_endpoints').click(function() {
+            location.href="/configuration/endpoint";
+        });
+        $('#button_summary').click(function() {
+            location.href="/configuration/review";
+        });
 
     } );
 </script>

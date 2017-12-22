@@ -313,20 +313,15 @@
                     <!-- Nav tabs -->
                     <div class="btn-group" >
 
-                        <button class="btn btn-default btn-sm m-t-10">Architecture</button>
-                        <button class="btn btn-success btn-sm m-t-10">Environment & Host information</button>
-                        <button class="btn btn-default btn-sm m-t-10">Interface Information</button>
-                        <button class="btn btn-default btn-sm m-t-10">Service Endpoints</button>
-                        <button class="btn btn-default btn-sm m-t-10">Review</button>
+                        <button id="button_architecture" class="btn btn-default btn-sm m-t-10">Architecture</button>
+                        <button id="button_environment" class="btn btn-success btn-sm m-t-10">Environment & Host information</button>
+                        <button id="button_interface" class="btn btn-default btn-sm m-t-10">Interface Information</button>
+                        <button id="button_endpoints" class="btn btn-default btn-sm m-t-10">Service Endpoints</button>
+                        <button id="button_summary" class="btn btn-default btn-sm m-t-10">Summary & Expert</button>
+
 
                     </div>
-
-
-
-
                 </div>
-
-
 
                 <div class="padding-20">
 
@@ -362,17 +357,18 @@
 
                 <div class="row">
                     <div class="col-lg-12">
-
                         <div class="padding-10 panel panel-default">
+
+
+                            <H5><i class="fa pg-desktop"></i> &nbsp;Environment </H5>
                             <div class="card-block">
 
-                                <H5><i class="fa pg-desktop"></i> &nbsp;Environment </H5>
 
 
-                                <div class="padding-30 bg-white">
+                                <div class="padding-10 bg-white">
                                     <form role="form">
 
-                                        <H5><i class="fa fa-signal"></i> &nbsp;Network Information</H5>
+                                        <H6><i class="fa fa-signal"></i> &nbsp;Network Information</H6>
                                         <div class="form-group-attached">
                                             <div class="form-group form-group-default required">
                                                 <label>NTP IP Address</label>
@@ -402,7 +398,7 @@
                                             </div>
                                         </div>
                                         <br>
-                                        <H5><i class="fa pg-tables"></i> &nbsp;Database Information</H5>
+                                        <H6><i class="fa pg-tables"></i> &nbsp;Database Information</H6>
                                         <div class="form-group-attached">
                                             <div class="form-group form-group-default required">
                                                 <label>Database IP Address</label>
@@ -410,7 +406,7 @@
                                             </div>
                                         </div>
                                         <br>
-                                        <H5><i class="fa fa-folder-open-o"></i> &nbsp;Storage  Information</H5>
+                                        <H6><i class="fa fa-folder-open-o"></i> &nbsp;Storage  Information</H6>
                                         <div class="form-group-attached">
                                             <div class="form-group form-group-default required">
                                                 <label>Storage URI Address</label>
@@ -1812,5 +1808,24 @@
 <script src="/assets/js/index.js" type="text/javascript"></script>
 <script src="/assets/js/scripts.js" type="text/javascript"></script>
 <!-- END PAGE LEVEL JS -->
+<script>
+    $(document).ready(function() {
+        $('#button_architecture').click(function() {
+            location.href="/configuration/architecture";
+        });
+        $('#button_environment').click(function() {
+            location.href="/configuration/environment";
+        });
+        $('#button_interface').click(function() {
+            location.href="/configuration/interface";
+        });
+        $('#button_endpoints').click(function() {
+            location.href="/configuration/endpoint";
+        });
+        $('#button_summary').click(function() {
+            location.href="/configuration/review";
+        });
+    } );
+</script>
 </body>
 </html>

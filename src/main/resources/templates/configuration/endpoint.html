@@ -314,11 +314,11 @@
                     <!-- Nav tabs -->
                     <div class="btn-group" >
 
-                        <button class="btn btn-default btn-sm m-t-10">Architecture</button>
-                        <button class="btn btn-default btn-sm m-t-10">Environment & Host information</button>
-                        <button class="btn btn-default btn-sm m-t-10">Interface Information</button>
-                        <button class="btn btn-success btn-sm m-t-10">Service Endpoints</button>
-                        <button class="btn btn-default btn-sm m-t-10">Review</button>
+                        <button id="button_architecture" class="btn btn-default btn-sm m-t-10">Architecture</button>
+                        <button id="button_environment" class="btn btn-default btn-sm m-t-10">Environment & Host information</button>
+                        <button id="button_interface" class="btn btn-default btn-sm m-t-10">Interface Information</button>
+                        <button id="button_endpoints" class="btn btn-success btn-sm m-t-10">Service Endpoints</button>
+                        <button id="button_summary" class="btn btn-default btn-sm m-t-10">Summary & Expert</button>
 
                     </div>
                 </div>
@@ -350,58 +350,48 @@
                         </div>
                     </div>
                     <br/>
-                    <div class="padding-30">
+                    <div class="padding-10">
                         <table id="physical_hosts" class="display" cellspacing="0" width="100%">
                             <thead>
                             <tr>
-                                <th>ENDPOINT TYPE CODE</th>
-                                <th>THRESHOLD ERROR COUNT </th>
-                                <th>THRESHOLD SUCCESS COUNT </th>
-                                <th>DISPLAY LABEL </th>
-                                <th>MODULE_NAME </th>
-                                <th>RESOURCE TYPE </th>
+                                <th width="13%">SERVICE ENDPOINT <br/>TOKEN</th>
+                                <th width="10%">ENDPOINT <br/>TYPE CODE </th>
+                                <th>ENDPOINT <br/>CONFIGURATION </th>
+                                <th width="10%">Action </th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr>
-                                <td>endpoint_pan</td>
-                                <td>3</td>
-                                <td>3</td>
-                                <td>PAN URL </td>
-                                <td><button class="btn btn-default btn-xs btn-cons "  type="button"><span class="bold">FIS</span></button></td>
-                                <td>PANValidation </td>
+                                <td>reg_pan_1</td>
+                                <td><code><span class="bold">endpoint_pan</span></code></td>
+                                <td>
+                                    <input type="text" placeholder="Type Physical Host Name" class="form-control" value="url=https://172.30.33.101/apps/MobileCardholderRegistrationWS_V0101/panValidationService">
+                                </td>
+                                <td><button id="edit_button1" class="btn btn-success btn-xs btn-cons"  type="button"><i class="fa fa-paste"></i> <span class="bold">Edit</span></button></td>
                             </tr>
                             <tr>
-                                <td>endpoint_ssn</td>
-                                <td>3</td>
-                                <td>3</td>
-                                <td>SSN URL </td>
-                                <td><button class="btn btn-default btn-xs btn-cons "  type="button"><span class="bold">FIS</span></button></td>
-                                <td>SecondaryValidation </td>
+                                <td>reg_ssn_1</td>
+                                <td><code><span class="bold">endpoint_ssn</span></code></td>
+                                <td>
+                                    <input type="text" placeholder="Type Physical Host Name" class="form-control" value="url=https://172.30.33.101/apps/MobileCardholderRegistrationWS_V0101/secondaryTokenValidationService">
+                                </td>
+                                <td><button class="btn btn-success btn-xs btn-cons " id="edit_button2"  type="button"><i class="fa fa-paste"></i> <span class="bold">Edit</span></button></td>
                             </tr>
                             <tr>
-                                <td>endpoint_prov</td>
-                                <td>3</td>
-                                <td>3</td>
-                                <td>PROV URL </td>
-                                <td><button class="btn btn-complete btn-xs btn-cons "  type="button"><span class="bold">FIA</span></button></td>
-                                <td>agent </td>
+                                <td>reg_custinfo_1</td>
+                                <td><code><span class="bold">endpoint_prov</span></code></td>
+                                <td>
+                                    <input type="text" placeholder="Type Physical Host Name" class="form-control" value="url=https://172.30.33.101/apps/MobileCardholderProvisioningWS_V0101/cardProvisioningService">
+                                </td>
+                                <td><button class="btn btn-success btn-xs btn-cons "  id="edit_button3" type="button"><i class="fa fa-paste"></i> <span class="bold">Edit</span></button></td>
                             </tr>
                             <tr>
-                                <td>endpoint_mail_url</td>
-                                <td>3</td>
-                                <td>3</td>
-                                <td>MAIL URL </td>
-                                <td><button class="btn btn-default btn-xs btn-cons "  type="button"><span class="bold">FIS</span></button></td>
-                                <td>MailURL </td>
-                            </tr>
-                            <tr>
-                                <td>endpoint_push_url</td>
-                                <td>3</td>
-                                <td>3</td>
-                                <td>PUSH URL </td>
-                                <td><button class="btn btn-default btn-xs btn-cons "  type="button"><span class="bold">FIS</span></button></td>
-                                <td>PushNotificationURL  </td>
+                                <td>provisioning_1</td>
+                                <td><code><span class="bold">endpoint_prov</span></code></td>
+                                <td>
+                                    <input type="text" placeholder="Type Physical Host Name" class="form-control" value="url=https://172.30.33.101/apps/MobileCardholderProvisioningWS_V0101/cardProvisioningService">
+                                </td>
+                                <td><button class="btn btn-success btn-xs btn-cons "  id="edit_button4"  type="button"><i class="fa fa-paste"></i> <span class="bold">Edit</span></button></td>
                             </tr>
                             </tbody>
                         </table>
@@ -1710,8 +1700,8 @@
 <!-- BEGIN VENDOR JS -->
 <script src="/assets/plugins/pace/pace.min.js" type="text/javascript"></script>
 <script src="/assets/plugins/jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
-<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js" />
 <script src="/assets/plugins/modernizr.custom.js" type="text/javascript"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js" />
 <script src="/assets/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
 <script src="/assets/plugins/bootstrapv3/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="/assets/plugins/jquery/jquery-easy.js" type="text/javascript"></script>
@@ -1747,22 +1737,67 @@
 <script>
     $(document).ready(function() {
 
+        var message = "Your data successfully updated. ";
+        var position = $('.tab-pane.active .position.active').attr('data-placement'); // Placement of the notification
+
+
+        $('#edit_button1').click(function() {
+            $('.page-content-wrapper').pgNotification({
+                style: 'simple',
+                message: message,
+                position: position,
+                type: 'success'
+            }).show();
+
+        });
+        $('#edit_button2').click(function() {
+            $('.page-content-wrapper').pgNotification({
+                style: 'simple',
+                message: message,
+                position: position,
+                type: 'success'
+            }).show();
+        });
+        $('#edit_button3').click(function() {
+            $('.page-content-wrapper').pgNotification({
+                style: 'simple',
+                message: message,
+                position: position,
+                type: 'success'
+            }).show();
+        });
+        $('#edit_button4').click(function() {
+            $('.page-content-wrapper').pgNotification({
+                style: 'simple',
+                message: message,
+                position: position,
+                type: 'success'
+            }).show();
+        });
+
+
+        $('#button_architecture').click(function() {
+            location.href="/configuration/architecture";
+        });
+        $('#button_environment').click(function() {
+            location.href="/configuration/environment";
+        });
+        $('#button_interface').click(function() {
+            location.href="/configuration/interface";
+        });
+        $('#button_endpoints').click(function() {
+            location.href="/configuration/endpoint";
+        });
+        $('#button_summary').click(function() {
+            location.href="/configuration/review";
+        });
 
 
         $('#physical_hosts').DataTable( {
             paging: false,
             searching: false,
             info: false,
-            columnDefs: [ {
-                targets: [ 0 ],
-                orderData: [ 0, 1 ]
-            }, {
-                targets: [ 1 ],
-                orderData: [ 1, 0 ]
-            }, {
-                targets: [ 4 ],
-                orderData: [ 4, 0 ]
-            } ]
+            sortable:false
         } );
 
 
