@@ -44,6 +44,8 @@
         location.href="/configuration/review/expert";
     });
 
+
+
     $('#portlet-linear1').portlet({
         progress: 'circle',
         onRefresh: function() {

@@ -76,20 +76,23 @@
         <!-- BEGIN SIDEBAR MENU ITEMS-->
         <ul class="menu-items">
             <li class="m-t-30 ">
-                <a href="index.html" class="detailed">
-                    <span class="title">Dashboard</span>
+                <a href="/configuration/architecture" class="detailed">
+                    <span class="title">Configuration</span>
                     <span class="details">12 New Updates</span>
                 </a>
-                <span class="bg-success icon-thumbnail"><i class="pg-home"></i></span>
+                <span class="bg-success icon-thumbnail"><i class="pg-settings_small_1"></i></span>
             </li>
 
             <li class="">
-                <a href="#" target="_blank"><span class="title">Cloud Support</span></a>
-                <span class="icon-thumbnail"><i class="pg-note"></i></span>
+                <a href="/update/index" class="detailed">
+                    <span class="title">Update</span>
+                    <span class="details">4 New Updates</span>
+                </a>
+                <span class="icon-thumbnail"><i class="pg-download"></i></span>
             </li>
             <li class="">
-                <a href="#" target="_blank"><span class="title">Changelog</span></a>
-                <span class="icon-thumbnail">Cl</span>
+                <a href="/monitoring/index" target="_blank"><span class="title">Monitoring</span></a>
+                <span class="icon-thumbnail"><i class="pg-server_hard"></i></span>
             </li>
         </ul>
         <div class="clearfix"></div>
@@ -328,9 +331,10 @@
 
                 <div class="padding-20 ">
 
+
                     <ul class="pager wizard ">
                         <li class="next">
-                            <button id="goExpertMode" class="btn btn-success btn-cons btn-animated from-left fa fa-truck pull-right" type="button">
+                            <button id="easyMode" class="btn btn-success btn-cons btn-animated from-left fa fa-truck pull-right" type="button">
                                 <span>Easy Mode</span>
                             </button>
                         </li>
@@ -1965,6 +1969,10 @@
 <script src="/assets/js/scripts.js" type="text/javascript"></script>
 <script>
     $(document).ready(function() {
+
+        $('#easyMode').click(function() {
+            location.href="/configuration/review";
+        });
 
         $('#physicalHosts1').click(function() {
             $('#modalSlideUp').modal('show')
